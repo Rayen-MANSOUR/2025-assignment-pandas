@@ -102,8 +102,8 @@ def compute_referendum_result_by_regions(referendum_and_areas):
             Registered=("Registered", "sum"),
             Abstentions=("Abstentions", "sum"),
             Null=("Null", "sum"),
-            Choice_A=("Choice A", "sum"),
-            Choice_B=("Choice B", "sum"),
+            **{"Choice A": ("Choice A", "sum")},
+            **{"Choice B": ("Choice B", "sum")},
         )
     )
     return grouped
